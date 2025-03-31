@@ -47,16 +47,21 @@
             this.Cantidad1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtElimCodigo = new System.Windows.Forms.TextBox();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.txtElimCodigo = new System.Windows.Forms.TextBox();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtBuscarProdu = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(150, 131);
+            this.btnAgregar.Location = new System.Drawing.Point(150, 118);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(100, 23);
             this.btnAgregar.TabIndex = 0;
@@ -185,6 +190,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.label1);
@@ -198,7 +204,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(94, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 159);
+            this.groupBox1.Size = new System.Drawing.Size(270, 186);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Carga de Productos";
@@ -209,32 +215,69 @@
             this.groupBox2.Controls.Add(this.txtElimCodigo);
             this.groupBox2.Location = new System.Drawing.Point(370, 31);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 159);
+            this.groupBox2.Size = new System.Drawing.Size(132, 186);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminar Producto";
             // 
-            // txtElimCodigo
-            // 
-            this.txtElimCodigo.Location = new System.Drawing.Point(46, 45);
-            this.txtElimCodigo.Name = "txtElimCodigo";
-            this.txtElimCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtElimCodigo.TabIndex = 0;
-            // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(59, 95);
+            this.btnBorrar.Location = new System.Drawing.Point(30, 83);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 1;
             this.btnBorrar.Text = "Eliminar";
             this.btnBorrar.UseVisualStyleBackColor = true;
             // 
+            // txtElimCodigo
+            // 
+            this.txtElimCodigo.Location = new System.Drawing.Point(19, 45);
+            this.txtElimCodigo.Name = "txtElimCodigo";
+            this.txtElimCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtElimCodigo.TabIndex = 0;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(150, 147);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(100, 23);
+            this.btnModificar.TabIndex = 11;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnBuscar);
+            this.groupBox3.Controls.Add(this.txtBuscarProdu);
+            this.groupBox3.Location = new System.Drawing.Point(508, 37);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(231, 180);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // txtBuscarProdu
+            // 
+            this.txtBuscarProdu.Location = new System.Drawing.Point(51, 39);
+            this.txtBuscarProdu.Name = "txtBuscarProdu";
+            this.txtBuscarProdu.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarProdu.TabIndex = 1;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(66, 107);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // FrmPrimero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
@@ -245,6 +288,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -272,6 +317,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.TextBox txtElimCodigo;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBuscarProdu;
     }
 }
 
